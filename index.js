@@ -3,12 +3,11 @@ document.getElementById("tinhLuong").onclick = function () {
   let luongNgay = document.getElementById("luongNgay").value * 1;
   let soNgayLam = document.getElementById("soNgayLam").value * 1;
   let tongLuong = luongNgay * soNgayLam;
-  document.getElementById("ketQua1").innerHTML += `
+  document.getElementById("ketQua1").innerHTML = `
     <p>Tiền lương nhân viên :
-    ${tongLuong.toLocaleString("vi", {
-      style: "currency",
-      currency: "VND",
-    })}</p>
+    ${Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(
+      tongLuong
+    )}</p>
     `;
 };
 
@@ -22,8 +21,8 @@ document.getElementById("tinhGiaTriTrungBinh").onclick = function () {
 
   let tongCacSo = soThuNhat + soThuHai + soThuBa + soThuTu + soThuNam;
   let trungBinh = tongCacSo / 5;
-  document.getElementById("ketQua2").innerHTML += `
-        <p>giá trị trung bình của 5 số là : ${trungBinh.toFixed(2)}</p>
+  document.getElementById("ketQua2").innerHTML = `
+        <p>Giá trị trung bình của 5 số là : ${trungBinh.toFixed(2)}</p>
     `;
 };
 
@@ -31,14 +30,14 @@ document.getElementById("tinhGiaTriTrungBinh").onclick = function () {
 document.getElementById("doiTien").onclick = function () {
   let tienUSD = document.getElementById("tienUSD").value * 1;
   let tienVND = tienUSD * 23500;
-  document.getElementById("tienViet").innerHTML += `
-        <p>${tienUSD.toLocaleString("en-US", {
+  document.getElementById("tienViet").innerHTML = `
+        <p>${Intl.NumberFormat("en-US", {
           style: "currency",
           currency: "USD",
-        })}  <==> ${tienVND.toLocaleString("vi", {
+        }).format(tienUSD)}  <==> ${Intl.NumberFormat("vi-VN", {
     style: "currency",
     currency: "VND",
-  })}</p>
+  }).format(tienVND)}</p>
     `;
 };
 
@@ -48,7 +47,7 @@ document.getElementById("tinhToan").onclick = function () {
   let chieuRong = document.getElementById("chieuRong").value * 1;
   let dienTich = chieuDai * chieuRong;
   let chuVi = (chieuDai + chieuRong) * 2;
-  document.getElementById("ketQua3").innerHTML += `
+  document.getElementById("ketQua3").innerHTML = `
     <p>Diện tích hình chữ nhật : ${dienTich}</p>
     <p>Chu vi chữ nhật : ${chuVi}</p>
   `;
@@ -60,7 +59,7 @@ document.getElementById("kySo").onclick = function () {
   let soDonVi = number1 % 10;
   let soHangChuc = Math.floor(number1 / 10);
   let tong2KySo = soDonVi + soHangChuc;
-  document.getElementById("ketQua4").innerHTML += `
-  <p>Tống 2 ký số là : ${soHangChuc} + ${soDonVi} = ${tong2KySo}</p>
-  `;
+  document.getElementById(
+    "ketQua4"
+  ).innerHTML = `<p>Tống 2 ký số là : ${soHangChuc} + ${soDonVi} = ${tong2KySo}</p>`;
 };

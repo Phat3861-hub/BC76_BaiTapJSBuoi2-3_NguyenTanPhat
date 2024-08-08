@@ -1,0 +1,77 @@
+.nav {
+    border-bottom: none;
+}
+
+.nav .nav-item button {
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-right: 10px;
+    border-color: black;
+    color: black;
+    transition: all 0.5s;
+}
+
+.nav .nav-item button:hover {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+.nav .nav-item .active {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+
+.tab-content .tab-pane .container {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 20px;
+    background-color: rgba(223, 223, 224, 0.5);
+}
+
+.tab-content .tab-pane .container h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.tab-content .tab-pane .container input {
+    border: 1px solid black;
+}
+
+.tab-content .tab-pane .container label {
+    font-size: 20px;
+}
+
+
+.tab-content .tab-pane .ketQua {
+    font-size: 20px;
+    align-items: center;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: black !important;
+    padding-left: 20px;
+}
+
+.tab-content .tab-pane .ketQua p {
+    margin: 5px;
+}
+
+.tab-content .tab-pane button {
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px !important;
+    transition: all 0.5s;
+    background-color: black;
+    color: white;
+}
+
+.tab-content .tab-pane button:hover {
+    background-color: green;
+    color: white;
+}
