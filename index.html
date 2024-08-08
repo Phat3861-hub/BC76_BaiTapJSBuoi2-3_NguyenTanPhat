@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header class="py-5 bg-danger">
+        <h1 class="text-center text-bg-danger">Bài tập JavaScript 1</h1>
+    </header>
+
+    <ul class="nav nav-tabs d-flex justify-content-center pt-5 id=" myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Bài 1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Bài 2</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài 3</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="bai4-tab" data-bs-toggle="tab" data-bs-target="#bai4-tab-pane" type="button"
+                role="tab" aria-controls="bai4-tab-pane" aria-selected="false">Bài 4</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="bai5-tab" data-bs-toggle="tab" data-bs-target="#bai5-tab-pane" type="button"
+                role="tab" aria-controls="bai5-tab-pane" aria-selected="false">Bài 5</button>
+        </li>
+
+    </ul>
+    <div class="tab-content p-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container">
+                <h2 class="text-warning">Tính tiền lương nhân viên</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Lương 1 ngày : </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="luongNgay" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập lương 1 ngày ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số ngày làm : </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soNgayLam" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số ngày làm ..." />
+                </div>
+                <button class="btn btn-success mb-2" id="tinhLuong">Tính tiền lương</button>
+                <div class=" py-2 bg-success text-white" id="ketQua1">
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container">
+                <h2 class="text-warning">Tính giá trị trung bình</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số thứ nhất: </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soThuNhat" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số thứ nhất ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số thứ hai: </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soThuHai" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số thứ hai ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số thứ ba: </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soThuBa" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số thứ ba ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số thứ tư: </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soThuTu" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số thứ tư ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số thứ năm: </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="soThuNam" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số thứ năm ..." />
+                </div>
+                <button class="btn btn-success mb-2" id="tinhGiaTriTrungBinh">Tính giá trị trung bình</button>
+                <div class=" py-2 bg-success text-white" id="ketQua2">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <div class="container">
+                <h2 class="text-warning">Chuyển đổi tiền tệ </h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Tiền USD : </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="tienUSD" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số tiền USD ..." />
+                </div>
+                <button class="btn btn-success mb-2" id="doiTien">Chuyển sang tiền việt</button>
+                <div class="mb-3">
+                    <label for="" class="form-label">Tiền Việt (VND): </label>
+                    <div class=" py-2 bg-success text-white" id="tienViet">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="bai4-tab-pane" role="tabpanel" aria-labelledby="bai4-tab" tabindex="0">
+            <div class="container">
+                <h2 class="text-warning">Tính chu vi & diện tích của hình chữ nhật </h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Chiều dài</label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="chieuDai" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập chiều dài hình chữ nhật ..." />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Chiều rộng</label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="chieuRong" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập chiều rộng hình chữ nhật ..." />
+                </div>
+
+                <button class="btn btn-success mb-2" id="tinhToan">Tính chu vi & diện tích hình chữ nhật</button>
+                <div class=" py-2 bg-success text-white" id="ketQua3">
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="bai5-tab-pane" role="tabpanel" aria-labelledby="bai5-tab" tabindex="0">
+            <div class="container">
+                <h2 class="text-warning">Tính tổng 2 ký số </h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số có 2 chữ số </label>
+                    <input type="text" class="form-control p-2 m-2" name="" id="number1" aria-describedby=" helpId"
+                        placeholder="Vui lòng nhập số có 2 chữ số" />
+                </div>
+                <button class="btn btn-success mb-2" id="kySo">Tính tổng 2 ký số</button>
+                <div class=" py-2 bg-success text-white" id="ketQua4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
